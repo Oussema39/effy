@@ -1,38 +1,36 @@
 .App {
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.02);
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  background-image: url("./assets/svgs/sign-in-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 2rem;
+}
+.content h1 {
+  margin-bottom: 1rem;
+}
+.pro-section {
+  flex-direction: column;
+  background: #003250;
   color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 42px 80px;
+  max-width: 18rem;
 }
-
-.App-link {
-  color: #61dafb;
+.pro-section p {
+  font-weight: 500;
+  font-size: 1.2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pro-section a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
 }

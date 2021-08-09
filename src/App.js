@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FooterBar from "./components/FooterBar/FooterBar";
+import NavBar from "./components/NavBar/NavBar";
+import SignInForm from "./components/SignInForm/SignInForm";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <div style={{ height: "72.3px" }} className="spacer"></div>
+      <div className="content">
+        <SignInForm />
+        <div className="pro-section">
+          <h1>Vous êtes un pro ?</h1>
+          <p>
+            Connectez-vous à votre Espace Partenaire Effy.{" "}
+            <a href="#">Se connecter</a>{" "}
+          </p>
+        </div>
+      </div>
+      <FooterBar />
     </div>
   );
 }
